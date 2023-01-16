@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: #0D0D0D
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Images/singingcourse.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+header button {
+    border: none;
+    outline: 0;
+    padding: 10px 20px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+header button:hover {
+    background-color: #555;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+.title {
+    text-align: center;
+    font-size:  70px;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contentsub {
+    display: flex;
+    flex-flow: column;
+    background-color: #1F1F26;
+    color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.container-content{
+    display: flex;
+    flex-flow: column;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.course:hover {
+    cursor: pointer;
+    border: 2px #D9D1D0 solid;
+}
+
+.course {
+    background-color: #1F1F26;
+    width: 1000px;
+    transition: 0.2s;
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.text p, h1 {
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+}
+
+.modulos {
+    margin-top: 10px;
+    background-color: #464659;
+    padding: 10px 0px;
+}
+
+h2, p {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .title {
+        font-size: 60px;
+    }
+
+    .course {
+        flex-flow: column;
+        padding: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .title {
+        font-size: 60px;
+    }
+
+    .course {
+        flex-flow: column;
+        padding: 10px;
+        width: auto;
+    }
+
+    img {
+        width: 100%;
+        height: 100px;
+    }
+
+    .course {
+        width: auto;
+    }
+}
